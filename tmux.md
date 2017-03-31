@@ -1,9 +1,6 @@
 tmux cheatsheet
 ===============
 
-Shunliu Zhao
-Last updated: 2017-jan-19
-
 
 ## configure tmux ##
 
@@ -44,6 +41,8 @@ vim ~/.tmux.conf
 
 ## use tmux ##
 
+### sessions ###
+
 * start a session named "alt": tmux new -s alt
  * re-attach a session(acting independently): tmux new -t alt
 * detach a session: C-a d
@@ -59,6 +58,9 @@ vim ~/.tmux.conf
  * C-a s          choose a session from a list
 * kill a session "alpha-alt":  tmux kill-session -t al
 
+
+### windows ###
+
 * create a new window: C-a c
 * rename a window: C-a ,
 * Switch between windows:
@@ -66,6 +68,9 @@ vim ~/.tmux.conf
  * C-a n/p        next/previous window
  * C-a l          ‘last’ (previously used) window
  * C-a w          choose window from a list
+
+
+### panes ###
 
 * split into two vertical panes: C-a "
  * with new config: C-a \
@@ -86,11 +91,16 @@ vim ~/.tmux.conf
  * C-a !        move the current pane into a new separate window
 * kill a pane: C-a x
 
+
+### misc ###
+
 * copy by using a mouse 
  * press 'ctrl + space' and hold, and then use mouse to select a rectangular field
  * or, press 'ctrl + alt' and hold, and then use mouse
 
-* ref
- * http://robots.thoughtbot.com/a-tmux-crash-course
+
+### ref ###
+
+* http://robots.thoughtbot.com/a-tmux-crash-course
  * https://gist.github.com/andreyvit/2921703
  * http://cheat.errtheblog.com/s/tmux
